@@ -12,3 +12,17 @@ C:\Users\carva\GitHub\Csharp Calculator\Csharp Calculator\obj\Debug\Csharp_Calcu
 C:\Users\carva\GitHub\Csharp Calculator\Csharp Calculator\obj\Debug\Csharp Calculator.csproj.GenerateResource.Cache
 C:\Users\carva\GitHub\Csharp Calculator\Csharp Calculator\obj\Debug\Csharp Calculator.exe
 C:\Users\carva\GitHub\Csharp Calculator\Csharp Calculator\obj\Debug\Csharp Calculator.pdb
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\bin\Debug\Csharp Calculator.exe.config
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator.exe
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator.pdb
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\bin\Debug\Csharp Calculator.exe
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\bin\Debug\Csharp Calculator.pdb
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator.csprojResolveAssemblyReference.cache
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\App.g.cs
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator_MarkupCompile.cache
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator_MarkupCompile.lref
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\MainWindow.baml
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator.g.resources
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp_Calculator.Properties.Resources.resources
+C:\Users\carva\GitHub\CsharpCalculator\Csharp Calculator\obj\Debug\Csharp Calculator.csproj.GenerateResource.Cache

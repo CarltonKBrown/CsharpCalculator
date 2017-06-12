@@ -6,7 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:Csharp_Calculator"
         mc:Ignorable="d"
-        Title="C# Calculator" Height="350" Width="350" Icon="./Resources/calculator-icon.png">
+        Title="C# Calculator" Height="350" Width="350" WindowStartupLocation="CenterScreen" Icon="./Resources/calculator-icon.png">
     <Window.Resources>
         <sys:String x:Key="towski">Yowski</sys:String>
     </Window.Resources>
@@ -15,6 +15,8 @@
             
         </Grid.Resources>
         <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -28,36 +30,44 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Name="UserInput" Grid.Row="0" Grid.ColumnSpan="4" TextWrapping="NoWrap" Text="Enter Equation" IsEnabled="False"/>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_Help">
+                <MenuItem Name="About" Header="_About" Click="About_Click">
+                    
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TextBox Name="Display" Grid.Row="1" Grid.ColumnSpan="4" TextWrapping="NoWrap" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"  IsEnabled="False"/>
+        <TextBox Name="Result_txt" Grid.Row="2" Grid.ColumnSpan="4" TextWrapping="NoWrap" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="20" Text="Enter Equation" IsEnabled="False"/>
         
         <!--1st Row of Buttons-->
-        <Button Name="btnClear" Grid.Row="1" Content="C" Click="btnClear_Click"/>
-        <Button Name="btnSign" Grid.Row="1" Grid.Column="1" Content="+/-" Click="btnSign_Click"/>
-        <Button Name="btnMod" Grid.Row="1" Grid.Column="2" Content="%" Click="btnMod_Click"/>
-        <Button Name="btnDelete" Grid.Row="1" Grid.Column="3" Content="DEL" Click="btnDelete_Click"/>
+        <Button Name="btnClear" Grid.Row="3" Content="C" Click="btnClear_Click" ToolTip="Clear screen"/>
+        <Button Name="btnSign" Grid.Row="3" Grid.Column="1" Content="+/-" Click="btnSign_Click" ToolTip="Changes sign"/>
+        <Button Name="btnMod" Grid.Row="3" Grid.Column="2" Content="%" Click="btnMod_Click" ToolTip="Modulus"/>
+        <Button Name="btnDelete" Grid.Row="3" Grid.Column="3" Content="DEL" Click="btnDelete_Click" ToolTip="Delete last character"/>
         
         <!--2nd Row of Buttons-->
-        <Button Name="btn7" Grid.Row="2" Content="7" Click="btn7_Click"/>
-        <Button Name="btn8" Grid.Row="2" Grid.Column="1" Content="8" Click="btn8_Click"/>
-        <Button Name="btn9" Grid.Row="2" Grid.Column="2" Content="9" Click="btn9_Click"/>
-        <Button Name="btnDiv" Grid.Row="2" Grid.Column="3" Content="/" Click="btnDiv_Click"/>
+        <Button Name="btn7" Grid.Row="4" Content="7" Click="btn7_Click"/>
+        <Button Name="btn8" Grid.Row="4" Grid.Column="1" Content="8" Click="btn8_Click"/>
+        <Button Name="btn9" Grid.Row="4" Grid.Column="2" Content="9" Click="btn9_Click"/>
+        <Button Name="btnDiv" Grid.Row="4" Grid.Column="3" Content="/" Click="btnDiv_Click"/>
 
         <!--3rd Row of Buttons-->
-        <Button Name="btn4" Grid.Row="3" Content="4" Click="btn4_Click"/>
-        <Button Name="btn5" Grid.Row="3" Grid.Column="1" Content="5" Click="btn5_Click"/>
-        <Button Name="btn6" Grid.Row="3" Grid.Column="2" Content="6" Click="btn6_Click"/>
-        <Button Name="btnMul" Grid.Row="3" Grid.Column="3" Content="*" Click="btnMul_Click"/>
+        <Button Name="btn4" Grid.Row="5" Content="4" Click="btn4_Click"/>
+        <Button Name="btn5" Grid.Row="5" Grid.Column="1" Content="5" Click="btn5_Click"/>
+        <Button Name="btn6" Grid.Row="5" Grid.Column="2" Content="6" Click="btn6_Click"/>
+        <Button Name="btnMul" Grid.Row="5" Grid.Column="3" Content="*" Click="btnMul_Click"/>
 
         <!--4th Row of Buttons-->
-        <Button Name="btn1" Grid.Row="4" Content="1" Click="btn1_Click"/>
-        <Button Name="btn2" Grid.Row="4" Grid.Column="1" Content="2" Click="btn2_Click"/>
-        <Button Name="btn3" Grid.Row="4" Grid.Column="2" Content="3" Click="btn3_Click"/>
-        <Button Name="btnSub" Grid.Row="4" Grid.Column="3" Content="-" Click="btnSub_Click"/>
+        <Button Name="btn1" Grid.Row="6" Content="1" Click="btn1_Click"/>
+        <Button Name="btn2" Grid.Row="6" Grid.Column="1" Content="2" Click="btn2_Click"/>
+        <Button Name="btn3" Grid.Row="6" Grid.Column="2" Content="3" Click="btn3_Click"/>
+        <Button Name="btnSub" Grid.Row="6" Grid.Column="3" Content="-" Click="btnSub_Click"/>
 
         <!--5th Row of Buttons-->
-        <Button Name="btn0" Grid.Row="5" Content="0" Click="btn0_Click"/>
-        <Button Name="btnPoint" Grid.Row="5" Grid.Column="1" Content="." Click="btnPoint_Click"/>
-        <Button Name="btnEqual" Grid.Row="5" Grid.Column="2" Content="=" Click="btnEqual_Click"/>
-        <Button Name="btnAdd" Grid.Row="5" Grid.Column="3" Content="+" Click="btnAdd_Click"/>
+        <Button Name="btn0" Grid.Row="7" Content="0" Click="btn0_Click"/>
+        <Button Name="btnPoint" Grid.Row="7" Grid.Column="1" Content="." Click="btnPoint_Click"/>
+        <Button Name="btnEqual" Grid.Row="7" Grid.Column="2" Content="=" Background="Orange" Click="btnEqual_Click"/>
+        <Button Name="btnAdd" Grid.Row="7" Grid.Column="3" Content="+" Click="btnAdd_Click"/>
     </Grid>
 </Window>
