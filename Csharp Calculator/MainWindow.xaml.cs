@@ -78,7 +78,7 @@ namespace Csharp_Calculator
                 operation = "";
             }
 
-            if (!Result_txt.Text.Contains("+") || !Result_txt.Text.Contains("-") || !Result_txt.Text.Contains("*") || !Result_txt.Text.Contains("/"))
+            if (!Result_txt.Text.Contains("+") && !Result_txt.Text.Contains("-") && !Result_txt.Text.Contains("*") && !Result_txt.Text.Contains("/") && !equation.Contains("%"))
             {
                 operation = "";
             }
@@ -308,6 +308,12 @@ namespace Csharp_Calculator
             double num1, num2, result;
 
             double.TryParse(equation.Substring(0,equation.IndexOf(operation)), out num1);
+
+            if (!equation.Contains("+") && !equation.Contains("-") && !equation.Contains("*") && !equation.Contains("/") && !equation.Contains("%"))
+            {
+                MessageBox.Show("Operator not present!");
+            }
+
             if (equation.Substring(equation.IndexOf(operation) + 1) == "")
             {
                 double.TryParse(equation.Substring(0, equation.IndexOf(operation)), out num2);
